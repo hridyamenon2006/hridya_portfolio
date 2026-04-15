@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Hridya Menon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">HM</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="page-hero">
+    <h1 class="animate-slide">Contact Me</h1>
+    <p class="animate-fade-delay">Let's connect and collaborate</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-grid">
+      <div class="contact-info animate-card">
+        <h2>Get in Touch</h2>
+        <p>I'm always open to new opportunities, collaborations, and conversations. Feel free to reach out!</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="c-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <p>hridya.menon@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">📱</div>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">📍</div>
+            <div>
+              <strong>Location</strong>
+              <p>New Panvel, Navi Mumbai, Maharashtra</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">🎓</div>
+            <div>
+              <strong>College</strong>
+              <p>Pillai College of Engineering, New Panvel</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">💼</div>
+            <div>
+              <strong>LinkedIn</strong>
+              <p>linkedin.com/in/hridyamenon</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">🐙</div>
+            <div>
+              <strong>GitHub</strong>
+              <p>github.com/hridyamenon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form animate-card">
+        <h2>Send a Message</h2>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn-primary full-width" onclick="sendMessage()">Send Message ✉️</button>
+        <div id="form-success" class="form-success hidden">✅ Message sent! I'll get back to you soon.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Hridya Menon · Pillai College of Engineering</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
